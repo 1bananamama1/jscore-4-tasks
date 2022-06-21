@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    background-color: lightgrey;
+
+}
+
+ul,
+li,
+p {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    padding: 0;
+    border: none;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+/*_______блок поиска_________*/
+.rep-search {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    width: 100%;
+    margin-bottom: 250px;
+}
+
+.rep-input {
+    width: 360px;
+    height: 40px;
+    padding: 10px 20px;
+    outline: none;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.autocomplete-list {
+    position: absolute;
+    top: 40px;
+    z-index: 10;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 360px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+.autocomplete-item {
+    padding: 10px 20px;
+    background-color: #fff;
+}
+
+.autocomplete-item:hover {
+    background-color: rgb(247, 220, 228);
+}
+
+/*_______блок списка_________*/
+.rep-list {
+    width: 100%;
+}
+
+.reps {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 360px;
+    gap: 5px;
+    color: #493c40;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.reps__item {
+    display: flex;
+    align-items: center;
+    background-color: #f2d8de;
+    outline: 1px solid #b5919c;
+    border-radius: 2px;
+    padding: 10px 20px;
+}
+
+.info p {
+    line-height: 20px;
+}
+
+.btn-delete {
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    border-radius: 50%;
+    border: 2px solid #b5919c;
+    background-color: transparent;
+    font-size: 15px;
+    color: #b5919c;
+    font-weight: bold;
+}
+
+.btn-delete:active {
+    background-color: #ccacb5;
+    color: rgb(243, 224, 224);
+    transform: scale(0.95);
+}
